@@ -1,0 +1,47 @@
+body {
+    background-color: #b1cbbb;
+}
+h1{
+    color: blue;
+	text-shadow: 3px 2px red;
+}
+p {
+    color: red;
+}
+p.normal{
+	color: black;
+}
+p.bold{
+	font-weight: bold;
+}
+div.right{
+	text-align: right;
+	margin-right: 200px;
+}
+div.center{
+	text-align: center;
+}
+img.modify{
+	width: 128px;
+	height: 128px;
+}
+table{
+	width: 100%;
+	text-align: left;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	}
+table.centered{
+	width:40%;
+	text-align: left;
+	border: 1px solid gray;
+	border-collapse: collapse;
+	border-spacing: 2px;
+}
+th, td{
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
