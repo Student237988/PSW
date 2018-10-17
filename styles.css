@@ -1,5 +1,4 @@
 body {
-    background-color: #b1cbbb;
 }
 h1{
     color: blue;
@@ -44,4 +43,31 @@ table.centered{
 th, td{
 	border: 1px solid gray;
 	border-collapse: collapse;
+}
+div.left-half{
+	background-color: #dc2cff;
+  	position: absolute;
+	width: 50%;
+	left: 0px;
+}
+div.right-half{
+	background-color: #574c40;
+  	position: absolute;
+	width: 50%;
+	right: 0px;
+}
+div.top{
+	background-color: #e28203;
+	height: 100px;
+	display: table-row;
+	
+}
+div.bot{
+	background-color: #FFFFFF;
+	top: 100px;
+	width: 100%;
+	display: table-row;
+}
+div.layout-rows{
+	display: table;
 }
