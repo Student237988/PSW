@@ -1,28 +1,23 @@
-body {
+body{
+background-color: #484b4a;
 }
 h1{
     color: blue;
 	text-shadow: 3px 2px red;
 }
 p {
-    color: red;
-}
-p.normal{
 	color: black;
 }
-p.bold{
-	font-weight: bold;
-}
-div.right{
-	text-align: right;
-	margin-right: 200px;
-}
-div.center{
+p.header{
 	text-align: center;
+	font-size: large;
+}
+p.normal{
+	font-size: 17;
 }
 img.modify{
-	width: 128px;
-	height: 128px;
+	width: 100%;
+	height: auto;
 }
 table{
 	width: 100%;
@@ -44,30 +39,97 @@ th, td{
 	border: 1px solid gray;
 	border-collapse: collapse;
 }
-div.left-half{
-	background-color: #dc2cff;
-  	position: absolute;
-	width: 50%;
-	left: 0px;
-}
-div.right-half{
-	background-color: #574c40;
-  	position: absolute;
-	width: 50%;
-	right: 0px;
-}
-div.top{
-	background-color: #e28203;
-	height: 100px;
-	display: table-row;
-	
-}
-div.bot{
-	background-color: #FFFFFF;
-	top: 100px;
+header{
+	padding-top: 5px;
+	padding-bottom: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 	width: 100%;
-	display: table-row;
+	height: 150px;
 }
-div.layout-rows{
-	display: table;
+footer {
+    margin-left: auto;
+	margin-right: auto;
+    width: 1200px;
+    padding-left: 50px;
+	padding-right: 50px;
+}
+
+address {
+    padding-top: 1%;
+    text-align: left;
+}
+
+/*navigation*/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+   However, delay the fade out process for 2.5 seconds */
+   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+   animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }

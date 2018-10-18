@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "description" content = "Website for cars lovers">
+		<meta name = "keywords" content = "Motorsport, cars, speed, petrol">
+		<title>Form</title>
+	</head>
+    <body>
+
+		<form method = "post" action = "index.html" autocomplete="on">
+
+            <p>
+            	<label>Marka:
+                    <input id = "marka" type = "text" placeholder="Wprowadź markę interesującego Cię samochodu" autofocus required>
+                </label>
+                <br><br>
+                <label>Model:
+                    <input id = "model" type="text" placeholder="Wprowadź model interesującego Cię samochodu" required>
+                </label>
+                <br><br>
+                <label>Rok produkcji:
+                    1990<input id = "rok" type="range" min="1990" max="2018" value="2004">2018
+                </label>
+                <br><br>
+                <label>Kolor nadwozia:
+                    <input id="kolor" type="color">
+                </label>
+                <br><br>
+                <label>Wyszukaj sprzedawcę:
+                    <input id="sprzedawca" type="search" placeholder="Nazwisko sprzedawcy">
+                </label>
+                <br><br>
+                <label>Adres interesującej oferty:
+                    <input id="url" type="url" placeholder="http://www.domainname.com/oferty/opel">
+                </label>
+            </p>
+            <p>
+                <input type = "submit" value = "Wyślij">
+                <input type = "reset" value = "Wyczyść formularz">
+            </p>
+        </form>
+
+	</body>
+</html>
